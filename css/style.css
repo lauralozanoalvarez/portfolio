@@ -241,6 +241,12 @@ h6 {
   color: #fff;
 }
 
+#intro .container .home-text {
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+
 #intro .btn-get-started {
   font: 500 14px/30px 'Raleway', sans-serif;
   font-weight: 500;
@@ -1506,6 +1512,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media only screen and (max-width: 414px){
+
+  
+#intro .container .home-text {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+}
+
 #intro {
   background-image: url(../img/intro-carousel/1.png) no-repeat center center fixed;
   background-size: cover;
@@ -1517,11 +1533,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100vh;
 }
 
-.home-text {
-  position: absolute;
-  top: 150px;
-  left: 30px;
-}
 
 @media (min-width: 992px) {
   #testimonials .testimonial-item p {
