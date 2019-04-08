@@ -184,7 +184,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #intro {
-  background: url(../img/intro-carousel/1.jpg);
+  background: url(../img/intro-carousel/1.png);
   display: table;
   width: 100%;
   height: 100vh;
@@ -223,7 +223,7 @@ h6 {
 #intro h1 {
   color: rgb(54, 52, 54);
   margin-bottom: 15px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -251,7 +251,7 @@ h6 {
 
 #intro .container .home-text {
   position: absolute;
-  top: 300px;
+  top: 210px;
   left: 30px;
 }
 
@@ -268,9 +268,27 @@ h6 {
   margin: 4px;
   color: rgb(29, 29, 29);
   background: rgba(253, 252, 255, 0.322);
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes btn {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
 }
 
 #intro .btn-get-started:hover {
+  -webkit-animation: none;
   background: rgb(180, 146, 252);
   color: #fff;
 }
@@ -1519,7 +1537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro {
-  background-image: url(../img/intro-carousel/1.png) no-repeat center center fixed;
+  background-image: url(../img/intro-carousel/1.PNG) no-repeat center center fixed;
   background-size: cover;
   max-width: 100%;
   -webkit-background-size: cover;
