@@ -122,7 +122,7 @@
   }
   /*================================== Tyepography ==================================*/
   body {
-    font: 400 16px/20px 'Montserrat', sans-serif;
+    font: 400 16px/20px 'Raleway', sans-serif;
   }
   h1,
   h2,
@@ -446,7 +446,7 @@
   }
   /*================================== Button Styles ==================================*/
   .btn-dark {
-    border-color: #202020;
+    border-color: #b9a7f9;
     color: #202020;
   }
   .btn-dark:hover,
@@ -1104,29 +1104,37 @@
   .cbp-l-project-related-title,
   .cbp-l-project-details-visit,
   .cbp-popup-singlePage-counter {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   .cbp-l-project-subtitle,
   .cbp-l-project-desc-text {
     font-family: 'Raleway', sans-serif;
   }
+
+  .cbp-l-project-desc2-text {
+    font-family: 'Raleway', sans-serif;
+    float: right;
+  }
+
   .cbp-l-project-details-visit {
     margin-top: 50px;
     float: left;
   }
   .cbp-l-project-desc-title span,
   .cbp-l-project-details-title span {
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.1em;
     line-height: 50px;
     padding-bottom: 7px;
     text-transform: uppercase;
+    font-weight: 600;
   }
   .cbp-l-project-desc-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 28px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-align: justify;
+    font-weight: 400;
   }
   .cbp-l-project-related-title {
     font-size: 16px;
@@ -1135,11 +1143,10 @@
     font-weight: 400;
   }
   .cbp-l-project-details-list strong {
-    color: #202020;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
     font-weight: 400;
-    min-width: 112px;
-    text-transform: uppercase;
   }
   .cbp-l-project-details-list > div,
   .cbp-l-project-details-list > li {
@@ -1164,7 +1171,7 @@
   }
   .cbp-popup-lightbox-title,
   .cbp-popup-lightbox-counter {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   .cbp-l-filters-alignCenter .cbp-filter-counter::before {
     border-top: 4px solid #303030;

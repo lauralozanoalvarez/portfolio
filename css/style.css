@@ -785,40 +785,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background:  url(../img/quote-bg.png) fixed center center ;
   background-size: cover;
   padding: 60px 0;
-}
-
-#call-to-action h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+  height: 100%;
+  z-index: 9;
 }
 
 #call-to-action p {
-  color: #fff;
+  color: rgb(49, 49, 49);
+  font-size: 17px;
+  font-family: 'Montserrat' sans-serif;
+  letter-spacing: 0.01em;
+
 }
 
-#call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#call-to-action .cta-btn:hover {
-  background: #BC9CFF;
-  border: 2px solid #BC9CFF;
-}
 
 /* Call To Action Section
 --------------------------------*/
@@ -1522,7 +1503,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media only screen and (max-width: 414px){
 
-  
+  .img-logo {
+    margin: 15px 0 30px 0;
+    width: 32%;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
 #intro .container .home-text {
   position: absolute;
   top: 150px;
@@ -1546,6 +1534,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #testimonials .testimonial-item p {
     width: 80%;
   }
+  
 }
 
 @media (min-width: 1024px) {
