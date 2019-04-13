@@ -164,6 +164,7 @@ h6 {
 }
 
 #header #logo h1 a,
+
 #header #logo h1 a:hover {
   color: rgb(31, 31, 31);
   padding-left: 10px;
@@ -223,17 +224,15 @@ h6 {
 #intro h1 {
   color: rgb(54, 52, 54);
   margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 #intro h2 {
   color: rgb(77, 75, 77);
-  margin-bottom: 30px;
-  font-size: 40px;
+  margin-bottom: 33px;
+  font-size: 45px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 #intro h3 {
@@ -251,8 +250,7 @@ h6 {
 
 #intro .container .home-text {
   position: absolute;
-  top: 210px;
-  left: 30px;
+  text-align: center;
 }
 
 #intro .btn-get-started {
@@ -369,10 +367,11 @@ h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: rgb(43, 42, 42);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  color: #4d5154;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 13px;
   text-transform: uppercase;
   outline: none;
 }
@@ -399,7 +398,7 @@ h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: #4d5154;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -1565,7 +1564,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #nav-menu-container {
-    padding-right: 60px;
+    padding-right: 0px;
   }
 }
 
