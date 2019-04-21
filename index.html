@@ -7,6 +7,12 @@
 <head>
   <meta charset="utf-8">
   <title>Laura Portfolio</title>
+
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -26,7 +32,6 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/cubeportfolio/cubeportfolio.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
@@ -50,7 +55,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">INICIO</a></li>
           <li><a href="#about">SOBRE MI</a></li>
-          <li><a href="#services">HABILIDADES</a></li>
+          <li><a href="#soft-skill">HABILIDADES</a></li>
           <li><a href="#portfolio">PROYECTOS</a></li>
           <li><a href="#contact">CONTACTO</a></li>
         </ul>
@@ -58,18 +63,36 @@
     </div>
   </header><!--------- #header --------->
 
-
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
-    <div class="container">
-      <div class="home-text">
-        <h2 class="hr-title">Hola, soy Laura</h2>
-        <h1 class="hr-sub-title"> Diseño soluciones innovadoras capaces de cambiar el mundo.</h1>
-        <a href="#about" class="btn-get-started scrollto">CONÓCEME</a>
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+            <div class="col-md-6 intro-info order-md-first order-last">
+                <div class="content-probando">
+                <h2>¡Hola, soy Laura!</h2>
+                <h1 class="hr-sub-title"> Diseño soluciones innovadoras para mejorar el mundo.</h1>
+                <div>
+                  <a href="#about" class="btn-get-started scrollto"> 
+                    <i class="fa fa-angle-down"> </i>
+                 </a>
+                </div>
+              </div>
+              </div>
+
+              <!-- <a href="#about" > </a>
+              <div class="icon" style="background: #fbffd3;"><i class="fa fa-angle-double-down"
+                ></i></div> -->
+
+  
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="img/intro-img.png" alt="" class="img-fluid">
+        </div>
       </div>
+
     </div>
+  
   </section><!--------- #intro --------->
 
 
@@ -82,7 +105,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>SOBRE MI</h3>
+          <h3>Sobre mí</h3>
         </header>
 
         <div class="container">
@@ -93,11 +116,15 @@
             </div>
 
             <div class="col-lg-6 content">
-              <p> UX Designer con background en Ingeniería de Sistemas. Me apasiona servir y ayudar a mejorar la vida de
-                 las personas creando soluciones eficientes que generen un impacto positivo en ellas.</p>
-              <p>Disfruto del trabajo en equipo y de las experiencias nuevas y desafiantes.
-                Creo en la empatía y la creatividad como claves para impulsar el éxito.</p>
-              <a href="img/CV.pdf" target="_blank" download>Mira mi cv</a>
+              <p> Mi pasión por ayudar a mejorar la calidad de vida de las personas me llevó a encontrar mi vocación como 
+                UX Designer. Veo en el diseño y la ciencia, una oportunidad para crear soluciones que aporten un valor
+                positivo en el mundo y nos permitan evolucionar hacia un futuro más sostenible para todos.</p>
+
+              <p> Disfruto de trabajar en equipo, aportar e innovar con eficiencia y compromiso, busco mejorar mis habilidades 
+                a través de las experiencias nuevas y desafiantes. </p>
+
+              <p> Creo en la empatía y la creatividad como claves para impulsar el éxito.</p>
+              <a href="img/CV.pdf" target="_blank" download>Descarga mi CV</a>
             </div>
 
           </div>
@@ -107,119 +134,128 @@
       </div>
     </section><!--------- #about --------->
 
-
-    <!--==========================
-      Services Section
+     <!--==========================
+      Soft Skill Section
     ============================-->
-    <section id="services">
+    <section id="soft-skill" class="wow fadeIn">
+        <div class="container-fluid">
+          
+          <header class="section-header">
+            <h3>Habilidades blandas</h3>
+            <!-- <h4>Capacidades que me permiten <b>desempeñar</b> de una <b>manera efectiva</b> :) </h4> -->
+          </header>
+  
+          <div class="row">
+  
+            <div class="col-lg-6">
+              <div class="soft-skill-img">
+                <img src="img/soft-skill.png" alt="" class="img-fluid">
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="soft-skill-content">
+                 <div class="features wow bounceInUp clearfix">
+                    <div class="icon" style="background: #e9f8ff;"><i class="ion-ios-git-merge" style="color: #4c92d3;"></i></div>
+                  <h4>Colaboración</h4>
+                  <p> Trabajo junto a mi equipo para alcanzar una meta en común compartiendo ideas y conocimientos. </p>
+                </div>
+
+                <div class="features wow bounceInUp clearfix">
+                    <div class="icon" style="background: #ffeef7;"><i class="ion-ios-heart-empty" style="color: #ff689b;"></i></div>
+                  <h4>Empatía</h4>
+                  <p> Me permite percibir, compartir y comprender lo que el otro puede sentir, para así diseñar soluciones centradas en el usuario. </p>
+                </div>
+  
+                <div class="features wow bounceInUp clearfix">
+                    <div class="icon" style="background: #fff5e5;"><i class="ion-ios-trending-up" style="color: #e98e06;"></i></div>
+                  <h4>Mentalidad de crecimiento</h4>
+                  <p>Veo en el éxito de los demás, una fuente de inspiración para superarme a mi misma día a día apostando siempre por el aprendizaje.</p>
+                </div>
+                
+                <div class="features wow bounceInUp clearfix">
+                    <div class="icon" style="background: #f3e6ff;"><i class="ion-ios-star-outline" style="color: #8660fe;"></i></div>
+                  <h4>Creatividad</h4>
+                  <p>Genero propuestas originales en base a nuevas ideas o conceptos. </p>
+                </div>
+                
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+
+
+     <!--==========================
+      tech-skill section 
+    ============================-->
+    <section id="tech-skill" class="section-bg">
       <div class="container">
 
-        <header class="section-header wow fadeInUp">
-          <h3>Habilidades Técnicas</h3>
-          <p>...</p>
+        <header class="section-header">
+            <h3>Habilidades duras</h3>
+
+          <h4>  Destrezas <b>técnicas</b> para <b>generar ideas</b> y convertirlas en <b>soluciones.</b></h4>
         </header>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-search"></i></div>
-            <h4 class="title"><a href="">Research</a></h4>
-            <p class="description">Recopilo y analizo la información obtenida de los usuarios y el producto.</p>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-search" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Investigación</a></h4>
+              <p class="description">Recopilo, proceso y analizo la información obtenida de los usuarios y el producto.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Interaction design</a></h4>
-            <p class="description">Creo productos que permiten al usuario alcanzar sus objetivos de la mejor manera posible.</p>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-git-merge" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Diseño de interacción</a></h4>
+              <p class="description">Creo productos que permiten al usuario alcanzar sus objetivos de la mejor manera posible.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Prototyping & Testing</a></h4>
-            <p class="description">Diseño prototipos en distintos niveles de fidelidad validando e iterando las posibles
-              soluciones para confirmar que resuelva las necesidades de los usuarios.</p>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-phone-portrait" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Diseño Visual</a></h4>
+              <p class="description">Diseño la interfaz visual del producto acorde a la experiencia de usuario y los patrones
+                de interacción.
+              </p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-star-outline"></i></div>
-            <h4 class="title"><a href="">Visual Design</a></h4>
-            <p class="description">Genero un gran número de ideas para aterrizarlas y transformarlas en posibles
-              soluciones.</p>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon" style="background: #e1eeff;"><i class="ion-ios-trending-up" style="color: #2282ff;"></i></div>
+                <h4 class="title"><a href="">Business mindset</a></h4>
+                <p class="description">Identifico y analizo métricas para validar si el producto propuesto cumple con los objetivos de negocio.</p>
+              </div>
+            </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fbffd3;"><i class="ion-ios-book" style="color:#dfc329;"></i></div>
+              <h4 class="title"><a href="">Storytelling</a></h4>
+              <p class="description">Cuento historias que impactan y establecen una conexión emocional con los usuarios.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Business mindset</a></h4>
-            <p class="description">Identifico y analizo métricas para validar si el producto propuesto cumple con los objetivos de negocio.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Design Thinking</a></h4>
-            <p class="description">Permite crear MVP uniendo las necesidades de los usuarios con la tecnología y
-              estrategias viables de negocio mediante el uso de procesos creativos.</p>
+
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-color-wand" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Design Thinking</a></h4>
+              <p class="description"> Soluciono problemáticas de manera innovadora y estratégica a través del uso de procesos creativos.  </p>
+            </div>
           </div>
 
         </div>
 
       </div>
-    </section><!--------- #services --------->
+    </section><!-- #tech-skill -->
 
-
-        <!--==========================
-      about2 Us Section
-    ============================-->
-    <section id="about2">
-        <div class="container">
-  
-          <header class="section-header">
-            <h3>Habilidades Blandas</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </header>
-  
-          <div class="row about2-cols">
-  
-            <div class="col-md-4 wow fadeInUp">
-              <div class="about2-col">
-                <div class="img">
-                  <img src="img/about2-mission.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-                </div>
-                <h2 class="title"><a href="#">habilidad1</a></h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-  
-            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="about2-col">
-                <div class="img">
-                  <img src="img/about2-plan.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-ios-list-outline"></i></div>
-                </div>
-                <h2 class="title"><a href="#">habilidad2</a></h2>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-              </div>
-            </div>
-  
-            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="about2-col">
-                <div class="img">
-                  <img src="img/about2-vision.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-                </div>
-                <h2 class="title"><a href="#">habilidad3</a></h2>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                </p>
-              </div>
-            </div>
-  
-          </div>
-  
-        </div>
-      </section><!-- #about2 -->
-  
-
-
+    
     <!--==========================
       Clients Section
     ============================-->
@@ -227,7 +263,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>HERRAMIENTAS</h3>
+          <h3>Herramientas</h3>
         </header>
 
         <div class="owl-carousel clients-carousel">
@@ -254,7 +290,7 @@
 
       <div class="container">
         <header class="section-header">
-          <h3 class="section-title">Proyectos</h3>
+          <h3 class="section-title">¡Conoce mis proyectos!</h3>
         </header>
 
         <div class="row">
@@ -456,7 +492,7 @@
 
           <div class="col-md-4">
             <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
+              <i class="ion-ios-pin"></i>
               <h3>Dirección</h3>
               <address>Lima, Perú</address>
             </div>
@@ -464,7 +500,7 @@
 
           <div class="col-md-4">
             <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
+              <i class="ion-ios-call"></i>
               <h3>Celular</h3>
               <p><a href="tel:+51944607423">+51 944 607 423</a></p>
             </div>
@@ -472,7 +508,7 @@
 
           <div class="col-md-4">
             <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
+              <i class="ion-ios-mail"></i>
               <h3>Email</h3>
               <p><a href="mailto:laulozanoalvarez@gmail.com">laulozanoalvarez@gmail.com</a></p>
             </div>
@@ -493,10 +529,11 @@
       <div class="container">
         <div class="row">
           <div class="social-links">
-            <a href="https://github.com/lauralozanoalvarez" target="_blank" class="github"><i
-                class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/lauralozanoalvarez/" target="_blank" class="linkedin"><i
-                class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/lauralozanoalvarez" target="_blank" class="github">
+              <ion-icon name="logo-github"></ion-icon></a>
+            </a>
+            <a href="https://www.linkedin.com/in/lauralozanoalvarez/" target="_blank" class="linkedin">
+              <ion-icon name="logo-linkedin"></ion-icon></a>
           </div>
         </div>
       </div>

@@ -2,12 +2,104 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Raleway|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai|Hind:500|Montserrat|Raleway');
 
 body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+}
+
+
+/* Why Us Section
+--------------------------------*/
+
+#soft-skill {
+  padding: 60px 0px;
+  background: #f7f7f7;
+}
+
+#soft-skill .soft-skill-content .features {
+  margin: 0px 0 25px 0;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#soft-skill .section-header h4{
+  font-size: 18px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#soft-skill .section-header h3{
+  letter-spacing: 0.2px;
+  font-size: 35px;
+  color: rgb(77, 75, 75);
+  margin-bottom: 50px;
+}
+
+.col-lg-6 {
+  margin-bottom: 25px;
+  
+}
+
+#soft-skill .soft-skill-content .features i {
+  font-size: 25px;
+  float:left;
+  padding: 3px 10px 4px 10px;
+}
+
+#soft-skill .soft-skill-content .icon {
+  font-size: 15px;
+  float:left;
+  padding-right:30px;
+  width:  40px;
+  height: 40px;
+  background: #dfe5e7;
+  border-radius: 50%;
+}
+
+#soft-skill .soft-skill-content .features h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 80px;
+  color: #515158;
+  margin-bottom: 5px;
+}
+
+#soft-skill .soft-skill-content .features p {
+  font: 500 14px/28px 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    margin-left: 80px;
+    margin-right: 40px;
+    color: #51505a;
+}
+
+#soft-skill .counters {
+  padding-top: 40px;
+}
+
+#soft-skill .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #555186;
+}
+
+#soft-skill .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #8a87b6;
+}
+
+.content-probando {
+margin-top: 90px;
+}
+
+#intro .img-logo {
+  display:none;
 }
 
 .img-logo {
@@ -23,7 +115,7 @@ body {
   border-radius: 100%;
 }
 a {
-  color: #BC9CFF;
+  color: rgb(90, 68, 138);
   transition: 0.5s;
 }
 
@@ -37,7 +129,8 @@ a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
+  font: 400 16px/30px 'Montserrat', sans-serif;
 }
 
 h1,
@@ -67,7 +160,7 @@ h6 {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition:  0.5s;
   z-index: 11;
 }
 
@@ -242,6 +335,16 @@ h6 {
   font-weight: 500;
 }
 
+#intro .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
 #intro p {
   width: 80%;
   margin: 0 auto 30px auto;
@@ -254,20 +357,17 @@ h6 {
 }
 
 #intro .btn-get-started {
-  font: 500 14px/30px 'Raleway', sans-serif;
+  font: 500 14px/30px 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 30px;
   display: inline-block;
-  padding: 8px 32px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 100%;
   transition: 0.5s;
-  margin: 4px;
-  color: rgb(29, 29, 29);
-  background: rgba(253, 252, 255, 0.322);
+  margin-top: 20px;
+  background: #eee7ff;
   cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
   -webkit-animation: pulse 1.5s infinite;
 }
 
@@ -287,8 +387,8 @@ h6 {
 
 #intro .btn-get-started:hover {
   -webkit-animation: none;
-  background: rgb(180, 146, 252);
-  color: #fff;
+  background-color: #e1f5f4d2;
+  color: #218ba8;
 }
 
 /*--------------------------------------------------------------
@@ -369,7 +469,7 @@ h6 {
   display: inline-block;
   color: #4d5154;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
@@ -378,7 +478,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #BC9CFF;
+  color: #1c91b1;
 }
 
 .nav-menu > li {
@@ -540,13 +640,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 .section-header h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: #111;
-  text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   position: relative;
   padding-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .section-header h3::before {
@@ -718,37 +818,38 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content p {
-  font: 400 16px/34px 'Raleway', sans-serif;
-  letter-spacing: .1em;
+  font: 500 14px/34px 'Montserrat', sans-serif;
+  letter-spacing: 0.3px;
 }
 
 #about .content a {
-    font: 400 14px/30px 'Raleway', sans-serif;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 15px;
-    color: #444;
-    width: 170px;
-    text-align: center;
-    height: 44px;
-    line-height: 43px;
+  font: 14px/30px 'Montserrat', sans-serif;
+  display: inline-block;
+  letter-spacing: 0.2px;
+  border-radius: 100px;
+  margin-top: 15px;
+  color: rgb(90, 68, 138);
+  font-weight: 700;
+  width: 170px;
+  background: #eee7ff;
+  text-align: center;
+  height: 44px;
+  line-height: 43px;
 }
 
 
 #about .content a:hover {
-  font: 500 14px 'Raleway', sans-serif;
-  letter-spacing: 0.1em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #BC9CFF;
+  font: 14px/30px 'Montserrat', sans-serif;
+  display: inline-block;
+
+  letter-spacing: 0.2px;
+  border-radius: 100px;
   margin-top: 15px;
-  color: #f2f2f2;
+  font-weight: 700;
   width: 170px;
+  background-color: #e1f5f4d2;
+  color: #218ba8;
   text-align: center;
-  height: 44px;
   line-height: 43px;
 }
 
@@ -848,58 +949,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
-/* Services Section
---------------------------------*/
-
-#services {
-  background: #fff;
-  background-size: cover;
-  padding: 60px 0 40px 0;
-}
-
-#services .box {
-  margin-bottom: 30px;
-}
-
-#services .icon {
-  float: left;
-}
-
-#services .icon i {
-  color: #BC9CFF;
-  font-size: 36px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-#services .title {
-  margin-left: 60px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-#services .title a {
-  color: #111;
-}
-
-#services .box:hover .title a {
-  color: #BC9CFF;
-}
-
-#services .description {
-  font-size: 14px;
-  margin-left: 60px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
 
 /* Call To Action Section
 --------------------------------*/
 
 #call-to-action {
-  background:  url(../img/quote-bg.png) fixed center center ;
-  background-size: cover;
+  background:  #fff ;
+  font-weight: 700;
   padding: 60px 0;
   height: 100%;
   z-index: 9;
@@ -946,52 +1002,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: .9s;
 }
 
-/* Facts Section
---------------------------------*/
 
-#facts {
-  background: url("../img/facts-bg.jpg") center top no-repeat fixed;
-  background-size: cover;
-  padding: 60px 0 0 0;
-  position: relative;
-}
 
-#facts::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.88);
-  z-index: 9;
-}
-
-#facts .container {
-  position: relative;
-  z-index: 10;
-}
-
-#facts .counters span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-  display: block;
-  color: #BC9CFF;
-}
-
-#facts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #111;
-}
-
-#facts .facts-img {
-  text-align: center;
-  padding-top: 30px;
-}
 
 /* Portfolio Section
 --------------------------------*/
@@ -1150,11 +1162,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #clients {
   padding: 60px 0;
+  background: #ffff;
 }
 
 #clients img {
   max-width: 100%;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.3s;
   padding: 15px 0;
 }
@@ -1182,132 +1195,76 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #BC9CFF;
 }
 
-/* Testimonials Section
+
+
+/* tech-skill Section
 --------------------------------*/
 
-#testimonials {
-  padding: 60px 0;
+#tech-skill {
+  content: "\f39a";
+  padding: 60px 0 40px 0;
 }
 
-#testimonials .section-header {
-  margin-bottom: 40px;
-}
-
-#testimonials .testimonial-item {
+#tech-skill .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
   text-align: center;
 }
 
-#testimonials .testimonial-item .testimonial-img {
-  width: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
+#tech-skill .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-#testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
+#tech-skill .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#tech-skill .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#tech-skill .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#tech-skill .title a {
   color: #111;
 }
 
-#testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0 0 15px 0;
+#tech-skill .box:hover .title a {
+  color: #1bb1dc;
 }
 
-#testimonials .testimonial-item .quote-sign-left {
-  margin-top: -15px;
-  padding-right: 10px;
-  display: inline-block;
-  width: 37px;
-}
-
-#testimonials .testimonial-item .quote-sign-right {
-  margin-bottom: -15px;
-  padding-left: 10px;
-  display: inline-block;
-  max-width: 100%;
-  width: 37px;
-}
-
-#testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-#testimonials .owl-nav,
-#testimonials .owl-dots {
-  margin-top: 5px;
+#tech-skill .description {
+  font: 500 13.5px/30px 'Montserrat', sans-serif;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
   text-align: center;
 }
 
-#testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#testimonials .owl-dot.active {
-  background-color: #BC9CFF;
-}
-
-/* Team Section
---------------------------------*/
-
-#team {
-  background: #fff;
-  padding: 60px 0;
-}
-
-#team .member {
+#tech-skill .section-header h4 {
+  font-size: 18px;
   text-align: center;
-  margin-bottom: 20px;
-  background: #000;
-  position: relative;
+  margin-bottom: 50px;
 }
 
-#team .member .member-info {
-  opacity: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
-}
 
-#team .member .member-info-content {
-  margin-top: -50px;
-  transition: margin 0.2s;
-}
-
-#team .member:hover .member-info {
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-#team .member:hover .member-info-content {
-  margin-top: 0;
-  transition: margin 0.4s;
-}
 
 /* Contact Section
 --------------------------------*/
@@ -1612,36 +1569,103 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
+  
+  
 }
 
 @media only screen and (max-width: 414px){
 
+  #soft-skill .soft-skill-img {
+    display:none;
+  }
   .img-logo {
     margin: 15px 0 30px 0;
     width: 32%;
     position: absolute;
     top: 8px;
     left: 15px;
+  }
+
+  #soft-skill .soft-skill-content .features {
+    margin: 0px 10px 25px 15px;
+    padding: 0;
+    transition: 0.3s ease-in-out;
 }
 
-#intro .container .home-text {
-  position: absolute;
-  top: 150px;
-  left: 30px;
-}
-}
-
-#intro {
-  background-image: url(../img/intro-carousel/1.PNG) no-repeat center center fixed;
-  background-size: cover;
-  max-width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
+#soft-skill .soft-skill-content .features h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 80px;
+  color: #515158;
+  margin-bottom: 5px;
+  line-height: 28px;
 }
 
+#tech-skill {
+  content: "\f39a";
+  padding: 30px 0 40px 0;
+}
+
+#soft-skill .section-header h3 {
+  letter-spacing: 0.2px;
+  font-size: 28px;
+  color: rgb(77, 75, 75);
+  margin-bottom: 20px;
+}
+
+#tech-skill .section-header h4 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#call-to-action p {
+  color: rgb(49, 49, 49);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.01em;
+}
+  .content-probando {
+    margin-top: 0px;
+    text-align: center;
+    }
+    #intro .container {
+      height: auto !important;
+      position:relative;
+      margin-top: 60px;
+    }
+    
+    #intro {
+      max-width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: auto;
+  }
+
+  #intro h1 {
+    color: rgb(54, 52, 54);
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 10px 0px 10px;
+}
+
+#intro h2 {
+  color: rgb(77, 75, 77);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#intro .btn-get-started {
+  margin-bottom: 30px;
+}
+
+}
 
 @media (min-width: 992px) {
   #testimonials .testimonial-item p {
@@ -1674,24 +1698,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #header #logo img {
-    max-height: 40px;
+    max-height: 20px;
   }
 
   #intro h2 {
     font-size: 28px;
   }
-
-  #intro {
-    background-image: url(../img/intro-carousel/1.png) no-repeat center center fixed;
-    background-size: cover;
-    max-width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-  }
-
 
   #nav-menu-container {
     display: none;
