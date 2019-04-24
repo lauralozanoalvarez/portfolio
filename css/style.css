@@ -9,43 +9,6 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
-/*Modal Section-------------*/
-
-.portfolio-modal .portfolio-modal-dialog {
-  padding: 3rem 1rem;
-  min-height: calc(100vh - 2rem);
-  margin: 1rem calc(1rem - 8px);
-  position: relative;
-  z-index: 2;
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.portfolio-modal .portfolio-modal-dialog .close-button {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-
-.portfolio-modal .portfolio-modal-dialog .close-button i {
-  line-height: 38px;
-}
-
-.portfolio-modal .portfolio-modal-dialog h2 {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  .portfolio-modal .portfolio-modal-dialog {
-    min-height: 100vh;
-    padding: 5rem;
-    margin: 3rem calc(3rem - 8px);
-  }
-  .portfolio-modal .portfolio-modal-dialog h2 {
-    font-size: 3rem;
-  }
-}
-
 
 /*---------------------------------------*/
 
@@ -53,12 +16,16 @@ body {
 --------------------------------*/
 
 #soft-skill {
-  padding: 60px 0px;
   background: #f7f7f7;
+padding-top:50px;}
+
+#soft-skill .container {
+  margin-top:30px;
 }
 
 #soft-skill .soft-skill-content .features {
   margin: 0px 0 25px 0;
+  
   padding: 0;
   transition: 0.3s ease-in-out;
 }
@@ -580,7 +547,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(0, 0, 0, 0.8);
+  background: #fff;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -598,7 +565,7 @@ h6 {
 }
 
 #mobile-nav ul li a {
-  color: #fff;
+  color: #4d5154;
   font-size: 13px;
   text-transform: uppercase;
   overflow: hidden;
@@ -621,7 +588,7 @@ h6 {
 }
 
 #mobile-nav ul li.menu-active a {
-  color: #BC9CFF;
+  color: #1c91b1;
 }
 
 #mobile-nav ul .menu-has-children i {
@@ -1303,7 +1270,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-
 /* Contact Section
 --------------------------------*/
 
@@ -1407,6 +1373,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #13a456;
 }
 
+
 .p-2 {
   background: #13a456;
   margin: 5px;
@@ -1422,12 +1389,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 #footer {
-  background: #000;
+  background: #fff;
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
@@ -1461,32 +1429,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #eee;
 }
 
-.social-links {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
-#footer .footer-top .social-links a {
-  text-align: center;
+#footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #333;
-  color: #eee;
+  background: #eee7ff;;
+  color: rgb(90, 68, 138);
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  margin-top: 10px;
 }
 
-#footer .footer-top .social-links a:hover {
-  background: #BC9CFF;
-  color: #fff;
+#footer .social-links a:hover {
+  background-color: #e1f5f4d2;
+  color: #218ba8;
 }
+
 
 #footer .footer-top h4 {
   font-size: 14px;
@@ -1526,10 +1489,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#footer .footer-top .footer-links ul i {
-  padding-right: 8px;
-  color: #ddd;
-}
 
 #footer .footer-top .footer-links ul li {
   border-bottom: 1px solid #333;
@@ -1577,19 +1536,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #13a456;
-}
 
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  color: rgb(73, 73, 73);
+  font-family: 'Montserrat', sans-serif;
 }
 
 #footer .credits {
   text-align: center;
   font-size: 13px;
-  color: #ddd;
 }
 
 /*--------------------------------------------------------------
@@ -1616,6 +1573,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   #soft-skill .soft-skill-img {
     display:none;
   }
+
+  #contact .section-header p {
+    font-size: 14px;
+  }
+
   .img-logo {
     margin: 15px 0 30px 0;
     width: 32%;
