@@ -1,5 +1,17 @@
+
+/* Fonts */
+@font-face {
+  font-family: GoogleSansBold;
+  src: url(../fonts/googleSans/GoogleSans-Bold.ttf);
+  }
+  
+  @font-face {
+  font-family: GoogleSansRegular;
+  src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
+  }
+
 .font1 {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Google Sans', sans-serif !important;
   }
   .font2 {
     font-family: 'Raleway', sans-serif !important;
@@ -137,16 +149,12 @@
   .h3,
   .h4,
   .h5,
-  .h6,
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
-    letter-spacing: .1em;
-    margin-bottom: 20px;
-  }
+ 
   h1 {
     font-size: 2.2em;
     line-height: 1.2em;
@@ -161,12 +169,23 @@
     font-size: 22px;
   }
   h5 {
+    font-size: 18px;
+    font-family: 'GoogleSansRegular', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+    h6 {
     font-size: 16px;
+    font-family: 'GoogleSansRegular', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    letter-spacing: 0.7px;
   }
   p {
     color: #505050;
-    font: 400 16px/34px 'Raleway', sans-serif;
-    letter-spacing: .1em;
+    font: 400 15px/16px 'GoogleSansRegular', sans-serif;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
   }
   p.sm {
     color: #505050;
@@ -182,12 +201,7 @@
   .black {
     color: #202020 !important;
   }
-  a {
-    color: #202020;
-  }
-  a:hover {
-    color: #212121;
-  }
+
   .black-text {
     color: #505050 !important;
   }
@@ -445,203 +459,8 @@
     color: #707070;
   }
   /*================================== Button Styles ==================================*/
-  .btn-dark {
-    border-color: #b9a7f9;
-    color: #202020;
-  }
-  .btn-dark:hover,
-  btn-dark:active,
-  btn-dark:focus {
-    color: #ffffff;
-    border-color: #202020;
-  }
-  .btn-dark:after,
-  btn-dark:active,
-  btn-dark:focus {
-    background-color: #202020;
-  }
-  .btn-white {
-    border-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.2);
-  }
-  .btn-white:active,
-  .btn-white:hover,
-  .btn-white:focus {
-    color: #363636;
-  }
+ 
   
-  .submit.btn-dark:hover {
-    background-color: #202020;
-  }
-  .btn-white:active,
-  .btn-white:after {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  .btn-bdr {
-    border-color: white;
-    color: white;
-  }
-  .btn-bdr:hover,
-  .btn-bdr:focus {
-    border-color: rgba(255, 255, 255, 0.7);
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .btn,
-  .btn-bdr,
-  .cbp-l-loadMore-button .cbp-l-loadMore-button-link,
-  .cbp-l-loadMore-button .cbp-l-loadMore-button-noMoreLoading {
-    font-size: 14px;
-    letter-spacing: .1em;
-    font-weight: 400;
-  }
-  .btn .fa {
-    font-size: 18px;
-    font-weight: 700;
-  }
-  .btn-lg {
-    font-size: 14px;
-  }
-  .cbp-l-loadMore-button .cbp-l-loadMore-button-link:hover {
-    color: #ffffff;
-  }
-  .btn-primary {
-    color: #ffffff;
-    border-color: #2e6da4;
-    background-color: #2e6da4;
-  }
-  .btn-primary:hover,
-  .btn-primary:active,
-  .btn-primary:focus {
-    color: #ffffff;
-    border-color: #2e6da4;
-  }
-  .btn-primary:after,
-  .btn-primary:active,
-  .btn-primary:focus {
-    background-color: #337ab7;
-  }
-  .btn-success {
-    color: #ffffff;
-    border-color: #5cb85c;
-    background-color: #4cae4c;
-  }
-  .btn-success:hover,
-  .btn-success:active,
-  .btn-success:focus {
-    color: #ffffff;
-    border-color: #4cae4c;
-  }
-  .btn-success:after,
-  .btn-success:active,
-  .btn-success:focus {
-    background-color: #5cb85c;
-  }
-  .btn-info {
-    color: #ffffff;
-    border-color: #5bc0de;
-    background-color: #46b8da;
-  }
-  .btn-info:hover,
-  .btn-info:active,
-  .btn-info:focus {
-    color: #ffffff;
-    border-color: #46b8da;
-  }
-  .btn-info:after,
-  .btn-info:active,
-  .btn-info:focus {
-    background-color: #5bc0de;
-  }
-  .btn-warning {
-    color: #ffffff;
-    border-color: #f0ad4e;
-    background-color: #eea236;
-  }
-  .btn-warning:hover,
-  .btn-warning:active,
-  .btn-warning:focus {
-    color: #ffffff;
-    border-color: #eea236;
-  }
-  .btn-warning:after,
-  .btn-warning:active,
-  .btn-warning:focus {
-    background-color: #f0ad4e;
-  }
-  .btn-danger {
-    color: #ffffff;
-    border-color: #d9534f;
-    background-color: #d43f3a;
-  }
-  .btn-danger:hover,
-  .btn-danger:active,
-  .btn-danger:focus {
-    color: #ffffff;
-    border-color: #d43f3a;
-  }
-  .btn-danger:after,
-  .btn-danger:active,
-  .btn-danger:focus {
-    background-color: #d9534f;
-  }
-  .btn-theme {
-    color: #ffffff;
-    border-color: #a79759;
-    background-color: #a79759;
-  }
-  .btn-theme:hover,
-  .btn-theme:active,
-  .btn-theme:focus {
-    color: #ffffff;
-    border-color: #b3a670;
-  }
-  .btn-theme:after,
-  .btn-theme:active,
-  .btn-theme:focus {
-    background-color: #b3a670;
-    color: #ffffff;
-  }
-  .btn-light {
-    color: #ffffff;
-    border-color: #ffffff;
-    background-color: none;
-  }
-  .btn-light:hover,
-  .btn-light:active,
-  .btn-light:focus {
-    color: #ffffff;
-    border-color: #323232;
-  }
-  .btn-light:after,
-  .btn-light:active,
-  .btn-light:focus {
-    background-color: #323232;
-    color: #202020;
-  }
-  .btn-black {
-    color: #ffffff;
-    border-color: #000000;
-    background-color: #000000;
-  }
-  .btn-black:hover,
-  .btn-black:active,
-  .btn-black:focus {
-    color: #ffffff;
-    border-color: #232323;
-  }
-  .btn-black:after,
-  .btn-black:active,
-  .btn-black:focus {
-    background-color: #232323;
-    color: #202020;
-  }
-  .black-bdr {
-    border-color: rgba(32, 32, 32, 0.5);
-  }
-  .black-bdr:hover,
-  .black-bdr:active {
-    border-color: #202020;
-  }
   /*================================== Features ==================================*/
   .features .icon {
     border-color: #202020;
@@ -1104,11 +923,11 @@
   .cbp-l-project-related-title,
   .cbp-l-project-details-visit,
   .cbp-popup-singlePage-counter {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   .cbp-l-project-subtitle,
   .cbp-l-project-desc-text {
-    font-family: 'Raleway', sans-serif;
+    font-family:  'GoogleSansBold', sans-serif;
   }
 
   .cbp-l-project-desc2-text {
@@ -1116,7 +935,9 @@
     float: right;
   }
 
-  .cbp-l-project-details-visit {
+  
+
+  .cbp-l-project-details-visit  {
     margin-top: 50px;
     float: left;
   }
@@ -1130,12 +951,12 @@
     font-weight: 600;
   }
   .cbp-l-project-desc-text {
-    font-size: 14px;
+    font: 500 15px/34px 'GoogleSansRegular', sans-serif;
     line-height: 28px;
-    letter-spacing: 0.08em;
-    text-align: justify;
-    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: left;
   }
+
   .cbp-l-project-related-title {
     font-size: 16px;
     text-align: center;
