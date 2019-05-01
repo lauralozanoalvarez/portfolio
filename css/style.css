@@ -246,7 +246,7 @@ h6 {
   margin-bottom: 33px;
   font-size: 45px;
   font-weight: 700;
-  font-family: 'GoogleSansBold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #intro h3 {
@@ -377,7 +377,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: #4d5154;
-  font-family: 'GoogleSansBold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
   font-weight: 700;
   font-size: 13px;
@@ -550,14 +550,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h3 {
   font-size: 40px;
-  color: #111;
+  color: #4D4B4D;
   text-align: center;
   font-weight: 700;
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 35px;
-  letter-spacing: 0.4px;
-  font-family: 'GoogleSansBold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-header h3::before {
@@ -1014,12 +1013,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item .portfolio-info h4 a {
-  color: #333;
-  font-family: 'GoogleSansBold',sans-serif;
+  color: #4D4B4D;
+  font-family: 'Montserrat',sans-serif;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 a:hover {
-  color: #9E81DD;
+  color: #313D53;
 }
 
 #portfolio .portfolio-item .portfolio-info p {
@@ -1118,8 +1117,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #tech-skill .title a {
-  color: #111;
-    font-family: 'GoogleSansBold',sans-serif;
+  color: #4D4B4D;
+    font-family: 'Montserrat',sans-serif;
     letter-spacing: 0.1px;
     font-size: 20px;
 }

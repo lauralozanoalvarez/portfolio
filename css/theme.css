@@ -142,7 +142,7 @@
   h4,
   h5 {
     font-weight: 700;
-    color: #202020;
+    color: #4D4B4D;
   }
   .h1,
   .h2,
@@ -160,7 +160,8 @@
     line-height: 1.2em;
   }
   h2 {
-    font-size: 28px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
   }
   h3 {
     font-size: 25px;
@@ -170,16 +171,16 @@
   }
   h5 {
     font-size: 18px;
-    font-family: 'GoogleSansRegular', sans-serif;
-    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
   }
     h6 {
-    font-size: 16px;
-    font-family: 'GoogleSansRegular', sans-serif;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    letter-spacing: 0.7px;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      margin-left: 5px;
+      letter-spacing: 0.4px;
   }
   p {
     color: #505050;
@@ -927,7 +928,7 @@
   }
   .cbp-l-project-subtitle,
   .cbp-l-project-desc-text {
-    font-family:  'GoogleSansBold', sans-serif;
+    font-family:  'Montserrat', sans-serif;
   }
 
   .cbp-l-project-desc2-text {
@@ -951,10 +952,10 @@
     font-weight: 600;
   }
   .cbp-l-project-desc-text {
-    font: 500 15px/34px 'GoogleSansRegular', sans-serif;
+    font: 500 14px/34px 'Montserrat', sans-serif;
     line-height: 28px;
-    letter-spacing: 0.3px;
     text-align: left;
+    margin-bottom: 13px;
   }
 
   .cbp-l-project-related-title {
@@ -964,15 +965,13 @@
     font-weight: 400;
   }
   .cbp-l-project-details-list strong {
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 0.08em;
-    font-weight: 400;
+    font: 500 14px/16px 'Montserrat', sans-serif;
+    line-height: 25px;
   }
   .cbp-l-project-details-list > div,
   .cbp-l-project-details-list > li {
-    font-size: 13px;
-    padding: 8px 0;
+    font: 500 14px/22px 'Montserrat', sans-serif;
+    padding: 5px 0;
   }
   .cbp-popup-singlePage-counter {
     font-size: 16px;
