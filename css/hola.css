@@ -783,9 +783,17 @@ h4 {
 }
 
 .cbp-l-project-desc-text {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 28px;
   font-weight: 500;
+}
+
+h4 {
+  margin-bottom: 6px;
+  font-family: 'Montserrat',sans-serif;
+  color: #4D4B4D;
+  margin-top: 30px;
+  margin-bottom: 6px;
 }
 
 .cbp-l-project-container {
