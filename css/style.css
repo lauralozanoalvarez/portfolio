@@ -15,6 +15,10 @@
   src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
   }
 
+  @font-face {
+    font-family: EuropaRegular;
+    src: url(../fonts/europa/Europa-Regular.otf);
+    }
 
 
 body {
@@ -33,11 +37,11 @@ margin-top: 140px;
 }
 
 .img-logo {
-	margin: 15px 0 30px 0;
-  width: 11%;
+  margin: 15px 0 30px 0;
   position: absolute;
   top: 5px;
   left: 15px;
+  height: 39px;
 }
 
 .profile {
@@ -144,7 +148,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  padding: 30px 0;
+  padding: 25px 0;
   height: 65px;
   position: fixed;
   left: 0;
@@ -156,7 +160,7 @@ h6 {
 
 #header.header-scrolled {
   background: #fff;
-  padding: 20px 0;
+  padding: 25px 0;
   height: 65px;
   transition: all 0.5s;
 }
@@ -165,14 +169,14 @@ h6 {
   float: left;
 }
 
-#header #logo h1 {
-  font-size: 20px;
+#header .logo h6 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
   margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
+  float: left;
+  font-weight: 500;
+
 }
 
 #header #logo h1 a,
@@ -182,14 +186,8 @@ h6 {
   padding-left: 10px;
   border-left: 4px solid #BC9CFF;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
-}
-
-#header #logo img {
-  padding: 0;
-  margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -200,11 +198,27 @@ h6 {
   background: url(../img/intro-carousel/1.png);
   display: table;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   max-width: 100%;
 }
 
+#header #intro .logo img {
+  display: none;
+}
+
+#intro::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
 #intro .container {
   display: flex;
@@ -226,7 +240,23 @@ h6 {
 
 #intro .content {
   text-align: center;
-  
+}
+
+#intro h2 {
+  color: #4E4C4C;
+  margin-bottom: 20px;
+  font-size: 43px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#intro h1 {
+  color: #4E4C4C;
+  margin-bottom: 15px;
+  font-size: 26px;
+  line-height: 37px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
@@ -234,27 +264,8 @@ h6 {
   color: #242323;
 }
 
-#intro h1 {
-  color: rgb(54, 52, 54);
-  margin-bottom: 15px;
-  font-size: 28px;
-  font-weight: 500;
-}
 
-#intro h2 {
-  color: rgb(77, 75, 77);
-  margin-bottom: 33px;
-  font-size: 45px;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-}
 
-#intro h3 {
-  color: indigo;
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 500;
-}
 
 #intro .icon {
   margin: 0 auto 15px auto;
@@ -376,12 +387,12 @@ h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #4d5154;
+  color: #4E4C4C;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
   font-weight: 700;
-  font-size: 13px;
   text-transform: uppercase;
+  font-size: 13px;
   outline: none;
 }
 
@@ -407,7 +418,7 @@ h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #4d5154;
+  color: #4E4C4C;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -922,12 +933,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+
 }
 
 #portfolio .portfolio-item {
   position: relative;
   height: 360px;
   overflow: hidden;
+
 }
 
 #portfolio .portfolio-item figure {
@@ -937,11 +950,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   border-radius: 4px 4px 0 0;
   margin: 0;
+  -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+  
+}
+
+#portfolio .portfolio-item figure img {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
 }
 
 #portfolio .portfolio-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
+  transform: scale(1.2);
 }
 
 #portfolio .portfolio-item figure .link-preview,
@@ -1454,12 +1476,39 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   .img-logo {
     margin: 15px 0 30px 0;
-    width: 32%;
+    height: 36px;
     position: absolute;
-    top: 8px;
+    top: 12px;
     left: 15px;
   }
 
+  #intro h1 {
+    color: rgb(54, 52, 54);
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .content-probando {
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+#intro .btn-get-started {
+  font: 500 14px/30px 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 30px;
+  display: inline-block;
+  padding: 8px 15px;
+  transition: 0.5s;
+  margin-top: 135px;
+  cursor: pointer;
+  color: #313D53;
+  -webkit-animation: pulse 1.5s infinite;
+}
   #soft-skill .soft-skill-content .features {
     margin: 0px 10px 25px 15px;
     padding: 0;
@@ -1520,19 +1569,8 @@ body.mobile-nav-active #mobile-nav-toggle {
       height: auto;
   }
 
-  #intro h1 {
-    color: rgb(54, 52, 54);
-    margin-bottom: 0px;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 0px 10px 0px 10px;
-}
 
-#intro h2 {
-  color: rgb(77, 75, 77);
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+
 
 #intro .container {
   margin-bottom: 90px;
